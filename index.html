@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    
+  <head>
+      <title>Nicole Nootbaar's Graphic Design/Web Design Portfolio</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+      <link href ="stylesheet.css" type="text/css" rel="stylesheet">
+  </head>
+
+  <body>
+
+      <!--Navigation Bar-->
+      <div id = "navigationBar">
+          <img src = "images/NN_Wordmark.jpg" id = "navLogo"/>
+          <div id = "menu">
+              <a href = "#aboutMe">About</a>
+              <a href = "#portfolio">Portfolio</a>
+              <a href = "#contactMe">Contact</a>
+          </div>
+      </div>
+
+      <!--Banner-->
+      <div id = "banner">
+          <img src = "images/NN_LetterMark.png" id = "bannerLogo"/>
+          <h1>Nicole Nootbaar</h1>
+          <h2>Graphic Designer/Web Designer</h2>
+      </div>
+
+      <!--About Me Section-->
+      <div id = "aboutMe">
+          <img src = "images/profilePicture.jpg" id = "profilePicture"/>
+            <h3>About Me</h3>
+            <p>Hello! I'm Nicole Nootbaar (pronounced "Newt-bar"), a Graphic Designer located in Indianapolis, IN. 
+              I received my bachelor’s degree in Graphic Design at Indiana State University in 2014 and have four years of experience working in the field. </p>
+            
+            <p>I am employed by Integrity One Technologies as a Designer for one of their clients: Riverview Health. 
+            I am experienced with time management, page layout, marketing collaboration, and client communication. 
+            I am also proficient in Adobe Creative Cloud Suite and have experience using Wordpress. 
+            In addition, I am actively learning how to build websites using HTML5, CSS, and JavaScript.</p>
+            
+            <p>I am currently looking to focus more on web design and gaining more experience.</p>
+
+            <!--Social Media Links-->
+            <div class = "socialMedia">
+                <a href = "#">LinkedIn</a>
+                <a href = "#">GitHub</a>
+                <a href = "#">Dribbble</a>
+            </div>
+
+            <!--Skills-->
+            <div class = "skills">
+                <h4>HTML</h4>
+                <h4>CSS</h4>
+                <h4>JavaScript</h4>
+                <h4>Photoshop</h4>
+                <h4>Illustrator</h4>
+                <h4>InDesign</h4>
+            </div>
+
+      </div>
+
+      <!--Portfolio Section-->
+      <div id = "portfolio">
+          <h3>Portfolio</h3>
+          <!--<div class = "portfolioImages">-->
+              <img src = "Images/Portfolio/Bray_Harrel_Sheehan_Event_Invite.png" class = "portfolioImages"/>
+              <img src = "Images/Portfolio/Bray_Harrel_Sheehan_Event_Invite.png" class = "portfolioImages"/>
+              <img src = "Images/Portfolio/Bray_Harrel_Sheehan_Event_Invite.png" class = "portfolioImages"/>
+         <!-- </div> -->
+      </div>
+
+      <!--Footer/Contact Me Section-->
+      <div id = "contactMe">
+          <h3>Contact Me</h3>
+          <form action="mailto:nicolenootbaar@gmail.com" method="POST" class = "contactForm">
+            <label for = "name">Name:</label>
+            <br>
+            <input type ='text' name = 'name' maxlength = '30'> 
+            
+            <br><br>
+            
+            <label for = "emailAddress">Email Address:</label>
+            <br>
+            <input type = 'text' name = 'emailAddress' maxlength = '30'>
+           
+            <br><br>
+            
+            <label for="message">Message:</label>
+            <br>
+            <textarea id="message" name="message" rows="7" cols="40">
+            </textarea>
+            
+            <br><br>
+
+            <input type = "submit" value = "Submit">
+          </form>
+          <p>Nicole Nootbaar © 2019</p>
+      </div>
+  </body>
+</html>
