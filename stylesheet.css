@@ -1,11 +1,9 @@
-@font-face {
-    font-family: 'Roboto', sans-serif;
-  }
-
 body {
     margin-top: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
+/*Headings*/
 h1 {
   font-weight: 900;
 }
@@ -19,6 +17,7 @@ h3 {
   font-size: 2.5em;
 }
 
+/*Navigation*/
 #navigationBar {
   border-bottom: 1px solid black;
 }
@@ -40,8 +39,9 @@ h3 {
   margin-left: 20px;
 }
 
+/*Banner*/
 #banner {
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg);
+  background-image: url(Images/bannerBackground5.jpg);
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
@@ -54,11 +54,12 @@ h3 {
   width: 200px;
 }
 
+/*About Me Section*/
 #aboutMe {
   height: 700px;
   margin: 20px 50px;
   border: 1px solid black;
-  overflow: auto;
+  overflow: hidden;
 }
 
 #profilePicture {
@@ -78,13 +79,19 @@ h3 {
   margin: 0px;
 }
 
-
+/*Portfolio Section*/
 #portfolio {
   text-align: center;
   margin-bottom: 20px;
 }
 
+.portfolioImages {
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
 
+/*Footer*/
 #contactMe {
   text-align: center;
   color: white;
@@ -96,4 +103,18 @@ h3 {
 
 #contactMe input {
   width: 300px;
+  border-radius: 5px;
+}
+
+#contactMe textarea {
+  border-radius: 5px;
+}
+
+#button {
+  height: 40px;
+  width: 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-weight: bold;
 }
