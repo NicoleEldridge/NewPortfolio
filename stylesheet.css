@@ -1,25 +1,35 @@
 body {
     margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
     font-family: 'Roboto', sans-serif;
 }
 
 /*Headings*/
 h1 {
   font-weight: 900;
+  font-size: 5em;
+  margin-bottom: -20px;
 }
 
 h2 {
   font-weight: 400;
+  font-size: 2em;
 }
 
 h3 {
   font-weight: 900;
   font-size: 2.5em;
+  text-align: center;
 }
 
 /*Navigation*/
 #navigationBar {
   border-bottom: 1px solid black;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 #navLogo {
@@ -48,25 +58,37 @@ h3 {
   height: 700px;
   text-align: center;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #bannerLogo {
   width: 200px;
+  margin-bottom: -20px;
 }
 
 /*About Me Section*/
 #aboutMe {
-  height: 700px;
-  margin: 20px 50px;
-  border: 1px solid black;
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*border: 1px solid black;*/
   overflow: hidden;
 }
 
 #profilePicture {
-  width: auto;
-  height: 100%;
-  float: left;
-  margin-right: 20px;
+  width: 30%;
+  height: auto;
+  align-items: center;
+  border-radius: 100%;
+  border: 10px solid #0a96a7;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
 }
 
 .socialMedia {
@@ -75,20 +97,21 @@ h3 {
   color: black;
 }
 
-.skills {
-  margin: 0px;
-}
 
 /*Portfolio Section*/
 #portfolio {
-  text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
-.portfolioImages {
-  width: 400px;
-  height: 300px;
-  overflow: hidden;
+.portfolioImages.a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pImage {
+  width: 33%;
+  height: 100%;
 }
 
 /*Footer*/
