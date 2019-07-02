@@ -5,13 +5,19 @@
       <title>Nicole Nootbaar's Graphic Design/Web Design Portfolio</title>
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
       <link href ="stylesheet.css" type="text/css" rel="stylesheet">
-      <script type="text/javascript" src="script.js"></script>
       <link rel='icon' href='Images/NN_favicon3.ico' type='image/x-icon'/ >
   </head>
 
   <body>
 
       <!--Navigation Bar-->
+      <div id = "mobileDropMenu">
+        <img src="Images/Close-button.jpg" id="close">
+        <a href = "#aboutMe">About</a><br><br>
+        <a href = "#portfolio">Portfolio</a><br><br>
+        <a href = "#contactMe">Contact</a>
+    </div>
+
       <div id = "navigationBar">
           <a href = "#banner"><img src = "images/NN_Wordmark.jpg" id = "navLogo"/></a>
           <div id = "menu">
@@ -19,6 +25,7 @@
               <a href = "#portfolio">Portfolio</a>
               <a href = "#contactMe">Contact</a>
           </div>
+          <img src="Images/mobileMenu.png" id="mobileMenu">
       </div>
 
       <!--Banner-->
@@ -44,25 +51,25 @@
 
             <!--Social Media Links-->
             <div class = "socialMedia">
-                <a href = "https://www.linkedin.com/in/nicole-nootbaar-a29bb057/" target="blank"><img src="Images/SocialIcons/linkedIn.png"/></a>
-                <a href = "https://github.com/NicoleNootbaar" target="blank"><img src="Images/SocialIcons/GitHub-Mark-64px.png"/></a>
-                <a href = "https://www.behance.net/nicolenoota227" target="blank"><img src="Images/SocialIcons/behance.png"/></a>
+                <a href = "https://www.linkedin.com/in/nicole-nootbaar-a29bb057/" target="blank"><img src="Images/SocialIcons/linkedIn.png" id="linkedIn"/></a>
+                <a href = "https://github.com/NicoleNootbaar" target="blank"><img src="Images/SocialIcons/GitHub-Mark-64px.png" id="gitHub"/></a>
+                <a href = "https://www.behance.net/nicolenoota227" target="blank"><img src="Images/SocialIcons/behance.png" id="behance"/></a>
             </div>
 
             <!--Skills-->
             <div class = "skills">
                 <h4>HTML</h4>
-                <div id="HTML" class="skillBar"></div>
+                <div class="emptySkillBar"><div id="HTML" class="skillBar"></div></div>
                 <h4>CSS</h4>
-                <div id="CSS" class="skillBar"></div>
+                <div class="emptySkillBar"><div id="CSS" class="skillBar"></div></div>
                 <h4>JavaScript</h4>
-                <div id="JavaScript" class="skillBar"></div>
+                <div class="emptySkillBar"><div id="JavaScript" class="skillBar"></div></div>
                 <h4>Photoshop</h4>
-                <div id="Photoshop" class="skillBar"></div>
+                <div class="emptySkillBar"><div id="Photoshop" class="skillBar"></div></div>
                 <h4>Illustrator</h4>
-                <div id="Illustrator" class="skillBar"></div>
+                <div class="emptySkillBar"><div id="Illustrator" class="skillBar"></div></div>
                 <h4>InDesign</h4>
-                <div id="InDesign" class="skillBar"></div>
+                <div class="emptySkillBar"><div id="InDesign" class="skillBar"></div></div>
             </div>
 
       </div>
@@ -107,6 +114,12 @@
           </form>
           <p>Nicole Nootbaar &copy; 2019</p>
       </div>
+
       
+  <!--JavaScript and jQuery add on--> 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" 
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" 
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
