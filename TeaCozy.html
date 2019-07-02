@@ -11,14 +11,22 @@
 
   <body>
       <!--Navigation Bar-->
-      <div id = "navigationBar">
-          <a href = "index.html"><img src = "images/NN_Wordmark.jpg" id = "navLogo"/></a>
-          <div id = "menu">
-              <a href = "index.html#aboutMe">About</a>
-              <a href = "index.html#portfolio">Portfolio</a>
-              <a href = "#contactMe">Contact</a>
-          </div>
+      <div id = "mobileDropMenu">
+          <img src="Images/Close-button.jpg" id="close">
+          <a href = "index.html#aboutMe">About</a><br><br>
+          <a href = "index.html#portfolio">Portfolio</a><br><br>
+          <a href = "#contactMe">Contact</a>
       </div>
+  
+        <div id = "navigationBar">
+            <a href = "index.html"><img src = "images/NN_Wordmark.jpg" id = "navLogo"/></a>
+            <div id = "menu">
+                <a href = "index.html#aboutMe">About</a>
+                <a href = "index.html#portfolio">Portfolio</a>
+                <a href = "#contactMe">Contact</a>
+            </div>
+            <img src="Images/mobileMenu.png" id="mobileMenu">
+        </div>
 
       <!--Heading-->
       <br>
@@ -26,14 +34,16 @@
       <br>
       <br>
       <br>
+      <!--<img src="Images/Portfolio/Tea Cozy Project/TeaCozy_ScreenShot.png" class="lightbox" >-->
+      <div class = "ltBxBackground">
       <div class = "pageTitle">
             <h3>Tea Cozy Web Development Project</h3>
             <p><em>Tea Cozy web development project built using HTML, CSS, and design specs and images from Codecademy.com.</em></p>
             </div>
 
             <div class="portfolioPageImg">
-                      <img src="/Images/Portfolio/Tea Cozy Project/TeaCozy_ScreenShot.png" class="lightbox"/ >
-            </div>
+              <img src="Images/Portfolio/Tea Cozy Project/TeaCozy_ScreenShot.png">
+          </div>
             
             <div class="description">
               <p>This webpage was built using HTML, CSS, and design specs from Codecademy.com. This project was intended to test 
@@ -69,6 +79,12 @@
           </form>
           <p>Nicole Nootbaar &copy; 2019</p>
       </div>
-      
+    </div>
+
+  <!--JavaScript and jQuery add on--> 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" 
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" 
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>    
   </body>
 </html>
