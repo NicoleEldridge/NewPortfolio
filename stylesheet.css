@@ -29,7 +29,7 @@ h3 {
   background-color: white;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 #navLogo {
@@ -50,6 +50,41 @@ h3 {
 }
 
 #menu a:hover {
+  color: #0a96a7;
+}
+
+/*Mobile Menu*/
+#mobileMenu {
+  display: none;
+}
+
+#mobileDropMenu {
+  display: none;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  border: 0.75px solid lightgray;
+  text-align: right;
+  padding-right: 10px;
+  padding-left: 20px;
+  padding-top: 10px;
+  position: fixed;
+  margin-right: 100px;
+  z-index: 5;
+}
+
+#close {
+  float: left;
+  width: 10%;
+}
+
+#mobileDropMenu a {
+  color: black;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+#mobileDropMenu a:hover {
   color: #0a96a7;
 }
 
@@ -104,6 +139,14 @@ h3 {
   margin: 0 30px 0 0;
 }
 
+.emptySkillBar {
+  background-color: lightgray;
+  height: 20px;
+  width: 100%;
+  margin-top: -20px;
+  margin-bottom: -10px;
+}
+
 .skillBar {
   background-color: #0a96a7;
   height: 20px;
@@ -112,7 +155,7 @@ h3 {
 }
 
 #HTML {
-  width: 90%;
+  width: 5%;
 }
 
 #CSS {
@@ -149,6 +192,7 @@ h3 {
 .pImage {
   width: 33%;
   height: 100%;
+  border: 0.75px solid lightgray;
 }
 
 /*Footer*/
@@ -217,4 +261,63 @@ h3 {
 
 .description a:hover {
   color: black;
+}
+
+/*Mobile styling max-width: 480px*/
+@media only screen and (max-width: 720px) {
+  h3 {
+    margin-bottom: 5px;
+  }
+  
+  #menu {
+    display: none;
+  }
+
+  #mobileMenu {
+    display: inline;
+    float: left;
+    width: 12%;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  #navLogo {
+    display: inline;
+    float: right;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 80%;
+  }
+
+  #banner {
+  }
+
+  #banner h1 {
+    font-size: 2em;
+  }
+
+  #aboutMe {
+    margin-bottom: 5px;
+    width: 80%;
+    font-size: 1.25em;
+  }
+  
+  #profilePicture {
+    border: 10px solid #0a96a7;
+    width: 70%;
+    margin-top: -100px;
+    margin-bottom: -5px;
+  }
+  
+  .portfolioImages.a {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .pImage {
+    width: 100%;
+  }
 }
