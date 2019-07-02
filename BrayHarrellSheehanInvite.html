@@ -11,14 +11,22 @@
 
   <body>
       <!--Navigation Bar-->
-      <div id = "navigationBar">
-          <a href = "index.html"><img src = "images/NN_Wordmark.jpg" id = "navLogo"/></a>
-          <div id = "menu">
-              <a href = "index.html#aboutMe">About</a>
-              <a href = "index.html#portfolio">Portfolio</a>
-              <a href = "#contactMe">Contact</a>
-          </div>
+      <div id = "mobileDropMenu">
+          <img src="Images/Close-button.jpg" id="close">
+          <a href = "index.html#aboutMe">About</a><br><br>
+          <a href = "index.html#portfolio">Portfolio</a><br><br>
+          <a href = "#contactMe">Contact</a>
       </div>
+  
+        <div id = "navigationBar">
+            <a href = "index.html"><img src = "images/NN_Wordmark.jpg" id = "navLogo"/></a>
+            <div id = "menu">
+                <a href = "index.html#aboutMe">About</a>
+                <a href = "index.html#portfolio">Portfolio</a>
+                <a href = "#contactMe">Contact</a>
+            </div>
+            <img src="Images/mobileMenu.png" id="mobileMenu">
+        </div>
 
       <!--Heading-->
       <br>
@@ -69,6 +77,12 @@
           </form>
           <p>Nicole Nootbaar &copy; 2019</p>
       </div>
-      
+    
+<!--JavaScript and jQuery add on--> 
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" 
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" 
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
+
   </body>
 </html>
