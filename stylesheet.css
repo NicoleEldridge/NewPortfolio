@@ -73,9 +73,11 @@ h3 {
   z-index: 5;
 }
 
-#close {
+#Close {
   float: left;
   width: 10%;
+  margin-left: 0.5%;
+  margin-top: 0.5%;
 }
 
 #mobileDropMenu a {
@@ -90,17 +92,18 @@ h3 {
 
 /*Banner*/
 #banner {
-  background-image: url(Images/bannerBackground5.jpg);
-  background-size: 110%;
+  background-image: url(Images/teal_banner.png);
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  height: 700px;
+  height: 600px;
   text-align: center;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid black;
 }
 
 #bannerLogo {
@@ -155,7 +158,7 @@ h3 {
 }
 
 #HTML {
-  width: 5%;
+  width: 90%;
 }
 
 #CSS {
@@ -241,8 +244,40 @@ h3 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 50%;
   margin-bottom: 20px;
+  border: 1px solid lightgray;
+}
+
+.portfolioPageImg2 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 20px;
+  border: 1px solid lightgray
+}
+
+.portfolioPageImg3 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 20px;
+  border: 1px solid lightgray
+}
+
+.portfolioPageVid {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.portfolioPageVid iframe,
+.portfolioPageVid object,
+.portfolioPageVid embed {
+  width: 50%;
+  width: 50%;
 }
 
 .description {
@@ -263,6 +298,74 @@ h3 {
   color: black;
 }
 
+/*Lightbox*/
+.lightbox {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: url(Images/Overlay.png);
+  z-index: 99;
+  display: none;
+}
+
+.lightboxImg {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: auto;
+  border: 1px solid lightgray;
+}
+
+.lightbox2 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: url(Images/Overlay.png);
+  z-index: 99;
+  display: none;
+}
+
+.lightbox3 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: url(Images/Overlay.png);
+  z-index: 99;
+  display: none;
+}
+
+#imgClose {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+#imgClose2 {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+#imgClose3 {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
 /*Mobile styling max-width: 480px*/
 @media only screen and (max-width: 720px) {
   h3 {
@@ -279,9 +382,8 @@ h3 {
     width: 12%;
     margin-right: 5px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
   }
-
   #navLogo {
     display: inline;
     float: right;
@@ -289,13 +391,32 @@ h3 {
     margin-top: 5px;
     margin-bottom: 5px;
     width: 80%;
+
+  }
+
+  #navigationBar {
+    position: relative;
+    
   }
 
   #banner {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-image: url(Images/teal_banner.png);
+  }
+
+  #banner img {
+    width: 30%;
   }
 
   #banner h1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   #aboutMe {
@@ -307,7 +428,7 @@ h3 {
   #profilePicture {
     border: 10px solid #0a96a7;
     width: 70%;
-    margin-top: -100px;
+    margin-top: 0px;
     margin-bottom: -5px;
   }
   
@@ -320,4 +441,21 @@ h3 {
   .pImage {
     width: 100%;
   }
+
+  .lightboxImg {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: auto;
+    border: 1px solid lightgray;
+  }
+
+  .portfolioPageVid iframe,
+  .portfolioPageVid object,
+  .portfolioPageVid embed {
+    width: 100%;
+    width: 100%;
+}
 }

@@ -4,7 +4,7 @@ $(document).ready(() => {
     $('#mobileDropMenu').show();
   })
 
-  $('#close').on('click', () => {
+  $('#Close').on('click', () => {
     $('#mobileDropMenu').hide();
   })
 
@@ -36,6 +36,18 @@ $(document).ready(() => {
   });
 
 //Rollover Portfolio Images
+$('#portfolioWeb').on('mouseenter', event => {
+  $(event.currentTarget).attr('src', 'Images/CoverImages/Coding_Cover.png');
+}).on('mouseleave', event => {
+  $(event.currentTarget).attr('src', 'Images/CoverImages/Website_Cover.png');
+});
+
+$('#wedding').on('mouseenter', event => {
+  $(event.currentTarget).attr('src', 'Images/CoverImages/Wedding_ThankYouTag.png');
+}).on('mouseleave', event => {
+  $(event.currentTarget).attr('src', 'Images/CoverImages/Wedding_Invite.png');
+});
+
   $('#teaCozy').on('mouseenter', event => {
     $(event.currentTarget).attr('src', 'Images/CoverImages/TeaCozy_ScreenShot_2.png');
   }).on('mouseleave', event => {
@@ -73,8 +85,27 @@ $(document).ready(() => {
   });
 
 //Lightbox
-  /*$('.portfolioPageImg').on('click', event => {
-    $(.lightbox).toggle();
-  });  */
+  $('.portfolioPageImg').on('click', () => {
+    $('.lightbox').show();
+  });
+
+  $('.portfolioPageImg2').on('click', () => {
+    $('.lightbox2').show();
+  });
+
+  $('.portfolioPageImg3').on('click', () => {
+    $('.lightbox3').show();
+  });
   
+  $('#imgClose').on('click', () => {
+    $('.lightbox').hide();
+  });
+
+  $('#imgClose2').on('click', () => {
+    $('.lightbox2').hide();
+  })
+
+  $('#imgClose3').on('click', () => {
+    $('.lightbox3').hide();
+  })
 });
