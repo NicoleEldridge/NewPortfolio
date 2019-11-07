@@ -16,7 +16,7 @@ $(document).ready(() => {
   });
 
   $('#gitHub').on('mouseenter', event => {
-    $(event.currentTarget).attr('src', 'Images/SocialIcons/GitHub_teal.png');
+    $(event.currentTarget).attr('src', 'Images/SocialIcons/GitHub_Teal.png');
   }).on('mouseleave', event => {
     $(event.currentTarget).attr('src', 'Images/SocialIcons/GitHub-Mark-64px.png');
   });
