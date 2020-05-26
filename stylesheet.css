@@ -23,6 +23,10 @@ h3 {
   text-align: center;
 }
 
+strong {
+  color: #0a96a7;
+}
+
 /*Navigation*/
 #navigationBar {
   border-bottom: 1px solid black;
@@ -188,6 +192,7 @@ h3 {
 /*Portfolio Section*/
 #portfolio {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .portfolioImages.a {
@@ -197,9 +202,10 @@ h3 {
 }
 
 .pImage {
-  width: 33%;
+  width: 30%;
   height: 100%;
   border: 0.75px solid lightgray;
+  margin: 3px;
 }
 
 /*Footer*/
@@ -248,7 +254,7 @@ h3 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 70%;
   margin-bottom: 20px;
   border: 1px solid lightgray;
 }
@@ -442,6 +448,39 @@ h3 {
     margin-bottom: auto;
     border: 1px solid lightgray;
   }
+
+  .lightbox {
+  position: fixed;
+  max-width: 100%;
+  max-height: 100%;
+  left: 0px;
+  top: 0px;
+  background: url(Images/Overlay.png);
+  z-index: 99;
+  display: none;
+}
+
+.lightbox2 {
+  position: fixed;
+  max-width: 90%;
+  max-height: 90%;
+  left: 0px;
+  top: 0px;
+  background: url(Images/Overlay.png);
+  z-index: 99;
+  display: none;
+}
+
+.lightbox3 {
+  position: fixed;
+  max-width: 90%;
+  max-height: 90%;
+  left: 0px;
+  top: 0px;
+  background: url(Images/Overlay.png);
+  z-index: 99;
+  display: none;
+}
 
   .portfolioPageVid {
   text-align: center;
